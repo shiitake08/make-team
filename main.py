@@ -36,7 +36,7 @@ async def team_norem(ctx, specified_num=2):
 
 # メンバー数を指定してチーム分け
 @bot.command()
-async def group(ctx, specified_num=1):
+async def group(ctx, specified_num=2):
     make_team = MakeTeam()
     msg = make_team.make_specified_len(ctx,specified_num)
     await ctx.channel.send(msg)
