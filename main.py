@@ -40,6 +40,14 @@ async def group(ctx, specified_num=1):
     make_team = MakeTeam()
     msg = make_team.make_specified_len(ctx,specified_num)
     await ctx.channel.send(msg)
-
+    
+@bot.command()
+async def ping(ctx):
+    await ctx.send('pong')
+    
+@bot.command()
+async def kamaneko(ctx):
+    await ctx.send('boko')
+    
 """botの接続と起動"""
 bot.run(token)
