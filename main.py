@@ -49,5 +49,6 @@ async def ping(ctx):
 async def kamaneko(ctx):
     await ctx.send('boko')
     
+
 """botの接続と起動"""
 bot.run(token)
